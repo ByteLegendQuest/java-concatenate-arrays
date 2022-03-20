@@ -11,7 +11,9 @@ public class Main {
     }
 
     public static Object[] concatenate(Object[] a, Object[] b) {
-        System.arrayCopy(a, 0, b, b.length, a.length);
-        return b;
+        Object[] res = new Object[a.length + b.length];
+        System.arraycopy(a, 0, res, 0, a.length);
+        System.arraycopy(b, 0, res, a.length, b.length);
+        return res;
     }
 }
