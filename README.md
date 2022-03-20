@@ -33,7 +33,7 @@ Any changes to files other than the following files will be rejected:**
 # 连接两个<ruby>数组<rt>Array</rt></ruby>
 
 实现[src/main/java/com/bytelegend/Main.java](https://github.com/ByteLegendQuest/java-concatenate-arrays/blob/main/src/main/java/com/bytelegend/Main.java)中的`concatenate`方法，使之能将两个数组连接成一个新的数组。
-例如，给定数组`[1, 2]`,`[3, 4, 4]`，返回`[1, 2, 3, 4, 5]`。
+例如，给定数组`[1, 2]`,`[3, 4, 5]`，返回`[1, 2, 3, 4, 5]`。
 
 提示：你可以使用`System.arraycopy()`方法来拷贝数组中的元素。
 
