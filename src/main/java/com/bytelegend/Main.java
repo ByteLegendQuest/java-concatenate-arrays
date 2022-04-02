@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static Object[] concatenate(Object[] a, Object[] b) {
-        System.arrayscopy(b, 0, a, a.length-1, b.length);
+        System.arrayscopy(b, 0, a, a.length - 1, b.length);
         return a;
     }
 }
