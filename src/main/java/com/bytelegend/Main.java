@@ -10,5 +10,14 @@ public class Main {
                 Arrays.toString(concatenate(new Object[] {1, 2.0}, new Object[] {"3", "4", "5"})));
     }
 
-    public static Object[] concatenate(Object[] a, Object[] b) {}
+    public static Object[] concatenate(Object[] a, Object[] b) {
+        int len1 = a.length;
+        int len2 = b.length;
+        Object[] objects = Arrays.copyOf(a, len1 + len2);
+        for (int i = len1, index=0; i < len1 + len2 ; i++) {
+            objects[i] = b[index++];
+        }
+        return objects;
+
+    }
 }
