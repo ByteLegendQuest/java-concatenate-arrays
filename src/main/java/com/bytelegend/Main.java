@@ -12,13 +12,10 @@ public class Main {
 
     public static Object[] concatenate(Object[] a, Object[] b) {
 
-        List<Object> resultlist = new ArrayList<>(a.length + b.length);
-        Collections.addAll(resultlist, a);
-        Collections.addAll(resultlist, b);
+          Object[] results =Arrays.copyOf(a,a.length+b.length);
 
-        @SuppressWarnings("unchecked")
-        //the type cast is safe as the array1 has the type T[]
-        Object[] resultArray = (Object[]) Array.newInstance(a.getClass().getComponentType(), 0);
-        return resultlist.toArray(resultArray);
+       System.arraycopy(b,0,results,a.length,b.length);
+
+       return results;
     }
 }
