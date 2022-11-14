@@ -11,6 +11,6 @@ public class Main {
     }
 
     public static Object[] concatenate(Object[] a, Object[] b) {
-        Object[] c = new Object[a + b];
+        return new Object[a + b];
     }
 }
