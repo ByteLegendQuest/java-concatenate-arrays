@@ -1,21 +1,14 @@
 package com.bytelegend;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println(
-                Arrays.toString(concatenate(new String[]{"123"}, new String[]{"456"})));
+                Arrays.toString(concatenate(new String[] {"123"}, new String[] {"456"})));
         System.out.println(
-                Arrays.toString(concatenate(new Object[]{1, 2.0}, new Object[]{"3", "4", "5"})));
+                Arrays.toString(concatenate(new Object[] {1, 2.0}, new Object[] {"3", "4", "5"})));
     }
 
-    public static Object[] concatenate(Object[] a, Object[] b) {
-        List<Object> list = new ArrayList<>(Arrays.asList(a));
-        Collections.addAll(list, b);
-        return list.toArray();
-    }
+    public static Object[] concatenate(Object[] a, Object[] b) {}
 }
