@@ -14,7 +14,6 @@ public class Main {
         Object[] newArray = new Object[a.length + b.length];
         int index = 0;
         for (int i = 0; i < a.length; i++) {
-            String s = a[i].toString();
             newArray[index] = a[i];
             index++;
         }
