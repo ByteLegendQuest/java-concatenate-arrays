@@ -10,15 +10,5 @@ public class Main {
                 Arrays.toString(concatenate(new Object[] {1, 2.0}, new Object[] {"3", "4", "5"})));
     }
 
-    public static Object[] concatenate(Object[] a, Object[] b) {
-        int len = a.length + b.length;
-        Object[] temp = new Object[len];
-        for (int i = 0; i < a.length; i++) {
-        temp[i] = a[i];
-        }
-        for (int i = a.length, j = 0; i < len; i++, j++) {
-        temp[i] = b[j];
-        }
-        return temp;
-    }
+    public static Object[] concatenate(Object[] a, Object[] b) {}
 }
