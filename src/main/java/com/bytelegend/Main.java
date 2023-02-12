@@ -11,13 +11,13 @@ public class Main {
     }
 
     public static Object[] concatenate(Object[] a, Object[] b) {
-        int count = a.length + b.length.
+        int count = a.length + b.length;
         Object[] c = new Object[count];
-        for (i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++) {
             System.arraycopy(a, i, c, i, 1);
         }
-        count = a.length.
-        for (i = 0; i < b.length; i++) {
+        count = a.length;
+        for (int i = 0; i < b.length; i++) {
             System.arraycopy(b, i, c, count + i, 1);
         }
         return c;
