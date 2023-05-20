@@ -12,6 +12,6 @@ public class Main {
     }
 
     public static Object[] concatenate(Object[] a, Object[] b) {
-        Stream.concat(Stream.of(a), Stream.of(b)).toArray();
+        return Stream.concat(Stream.of(a), Stream.of(b)).toArray();
     }
 }
