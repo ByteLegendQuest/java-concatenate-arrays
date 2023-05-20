@@ -1,6 +1,7 @@
 package com.bytelegend;
 
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +11,7 @@ public class Main {
                 Arrays.toString(concatenate(new Object[] {1, 2.0}, new Object[] {"3", "4", "5"})));
     }
 
-    public static Object[] concatenate(Object[] a, Object[] b) {}
+    public static Object[] concatenate(Object[] a, Object[] b) {
+        Stream.of(a).concat(Stream.of(b)).toArray();
+    }
 }
